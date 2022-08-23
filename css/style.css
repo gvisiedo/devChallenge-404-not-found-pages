@@ -15,6 +15,7 @@ body>header{
     text-transform: uppercase;
     color: #333333;
     margin: 25px 25px;
+    
 }
 
 /*Main*/
@@ -24,14 +25,17 @@ main{
 .section-container{
     display: flex;
     flex-direction: row;
-    height: 100vh;
+   
     align-content: center;
     justify-content: center;
+    
   
 }
 .img-container{
-    margin-top: 10%;
+
+    margin-top: 15%;
     margin-left: 10%;
+    
    
 }
 .img-container>img{
@@ -40,7 +44,8 @@ main{
    }
 .text-container{
     margin: auto;
-    text-align: center;
+    padding: 250px;
+
 }
 .title-container{
  font-family:'Space Mono', monospace ;
@@ -48,6 +53,7 @@ main{
  line-height: 95px;
  letter-spacing: -0.035rem;
  color: #333333;
+ padding: 25px;
 
 }
 .pa-container{
@@ -55,20 +61,24 @@ main{
    font-weight: 400 ;
    font-size: 24px;
    color:#4F4f4f;
+   padding: 25px;
 
 
 
 }
 .button-container{
     margin: 15px 0px;
+    padding: 25px;
    
 }
 .button{
     font-family: 'Space Mono', monospace;
-   padding: 15px;
+    font-size: 14px;
+   padding: 25px 50px;
    background-color: #333333;
    border-radius: 0%;
    color: white;
+   text-transform: uppercase;
   
 }
 
@@ -87,3 +97,21 @@ footer p>span{
 
 /*Media Query*/
 
+@media (max-width:1500px){
+.section-container{
+    flex-wrap: wrap;
+}
+.title-container{
+    font-size: 32px;
+    line-height: 45px;
+}
+.pa-container{
+    font-size: 12px;
+}
+.img-container>img{
+    max-height: 250px;
+    max-width: 250px;
+   }
+
+    
+}
